@@ -36,12 +36,12 @@ print(f"x is {x}")
 - 事实上，如果你检查从右到左的 `x=int (input(Whats x?"))` 中的运算顺序，它会试图把一个字符串分配给一个整数，而这操作是不可能的，因此`x`永远不会被赋值.
 - 我们可以如下方式调整代码：
 ```python 
-try:
-    x=int(input("What`s x?")
-excepet ValueError:
-    print("x is not an integer")
-else:
-    print(f"x is {x}")
+    try:
+        x=int(input("What`s x?")
+     excepet ValueError:
+        print("x is not an integer")
+     else:
+        print(f"x is {x}")
 ```
 - 但是我们注意到，如果用户输入错误了，我们只能结束我们的程序了，而我们的目的是引导用户输入直到正确.
 ```python
